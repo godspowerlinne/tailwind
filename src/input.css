@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@font-face {
+  font-family: "Gilroy_Regular";
+  src: url(./gilroy/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Medium";
+  src: url(./gilroy/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Semibold";
+  src: url(./gilroy/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Bold";
+  src: url(./gilroy/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Black";
+  src: url(./gilroy/Gilroy-Black.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Light";
+  src: url(./gilroy/Gilroy-Light.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Thin";
+  src: url(./gilroy/Gilroy-Thin.ttf);
+}
+
+header {
+  background-image: url(images/wave\ 1.png);
+}
+.linne:hover > div:last-child {
+    display: flex;
+}
+
+.linnemedial {
+    @media (max-width: 768px) {
+        background-color: #0f0776;
+        border-radius: 9px;
+        padding: 10px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.rubic {
+    color: #ffdcdcb1;
+    background-clip: text;
+}
+nav .rubic {
+     @media (min-width: 768px) {
+        background: none;
+        color: #161c2d;
+    }
+}
+.linneul span {
+    font-size: 15px;
+    font-family: "Gilroy_Bold";
+    text-transform: uppercase;
+    color: #eef;
+    @media (max-width : 773px) {
+        font-size: 10px;
+    }
+}
+.linneul a {
+    font-size: 17px;
+    color: #7D818D;
+    font-family: "Gilroy_Regular";
+
+    @media (max-width : 773px) {
+        font-size: 12px;
+    }
+}
+.hi a {
+    font-size: 37px;
+    color: #7D818D;
+    font-family: "Gilroy_Regular";
+
+    @media (max-width : 773px) {
+        font-size: 22px;
+    }
+}
+
+.linneul a:hover {
+    color: #68D585;
+    text-shadow: 0 0 10px rgb(17, 255, 239);
+}
+.linneul a:active {
+    color: #ff0000;
+    
+}
+ 
+.linneul ul {
+    margin-top: 2rem;
+}
+.linneul li{
+    margin-bottom: 1rem;
+    
+}
+.fibonacci {
+  font-size: 20px;
+  animation: fibonacci 3s infinite;
+  font-family: "Gilroy_Regular";
+}
+
+@keyframes fibonacci {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
